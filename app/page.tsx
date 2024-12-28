@@ -150,7 +150,7 @@ const Home = () => {
                         <p>xAI could offer AI-powered market prediction tools that leverage quantum computing
                             capabilities to forecast cryptocurrency trends with unprecedented accuracy. These predictive
                             analytics algorithms would analyze vast amounts of market data, sentiment analysis, and
-                            technical indicators to inform users' investment decisions and optimize trading strategies.
+                            technical indicators to inform users investment decisions and optimize trading strategies.
                         </p>
                     </div>
                     <div className="info_card">
@@ -165,7 +165,7 @@ const Home = () => {
                         <h4>Quantum AI-Driven Identity Verification</h4>
                         <p>xAI could revolutionize identity verification processes by introducing quantum AI-driven
                             solutions that enhance security and privacy. These solutions could leverage
-                            quantum-resistant cryptography and biometric authentication techniques to verify users'
+                            quantum-resistant cryptography and biometric authentication techniques to verify users
                             identities without compromising sensitive information, enabling secure and seamless
                             onboarding processes. </p>
                     </div>
