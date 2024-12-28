@@ -1,6 +1,5 @@
 'use client'
 import Nav from "@/components/nav";
-import { SignInButton, SignOutButton, SignUpButton } from "@clerk/nextjs";
 import React from "react";
 
 const Home = () => {
