@@ -1,4 +1,3 @@
-import Nav from '@/components/nav';
 import React, { ReactNode } from 'react';
 interface LayoutProps {
     children: ReactNode; // Explicitly define the type for children
