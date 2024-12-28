@@ -27,7 +27,7 @@ export default function SignUpPage() {
         <SignIn.Action submit className='Action_btn' >Sign In</SignIn.Action>
         
         <p className='already_p'>
-        Don't have an account ?
+        Don,t have an account ?{''}
         <Clerk.Link navigate='sign-up' className='bold_a'>
         Sign Up instead
         </Clerk.Link>
