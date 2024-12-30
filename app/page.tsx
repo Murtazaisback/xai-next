@@ -1,5 +1,6 @@
 'use client'
 import Nav from "@/components/nav";
+import ParticlesComponent from "@/components/Particles";
 import Timer from "@/components/Timer";
 import Timer2 from "@/components/Timer2";
 import React from "react";
@@ -18,7 +19,8 @@ const Home = () => {
     <div className="content">
     <Nav/>
     <header id="pre-sale" >
-        <div id="particles-js"></div>
+        {/* <div id="particles-js"></div> */}
+        <ParticlesComponent id="Particles_js"/>
       
         <div className="container">
             <div className="header_warp">
