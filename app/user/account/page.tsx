@@ -18,7 +18,9 @@ const Account = () => {
             <div className="dash_big">
                 <h3 className='account_head'>Profile Details</h3>
                 <div className="profiles_menu">
-                    <p>Personal Data</p>
+                    <p className='profiles_menu_actvice'> Personal Data</p>
+                    <p>Settings</p>
+                    <p>Password</p>
                 </div>
                 <div className="forms_inputs">
                     <div className="inputs_row">

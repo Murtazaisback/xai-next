@@ -1,4 +1,5 @@
 import AccountStatus from '@/components/AccountStatus'
+import Link from 'next/link'
 import React from 'react'
 
 const Balance = () => {
@@ -13,7 +14,7 @@ const Balance = () => {
                     <span>0 XAI</span>
                     <p className='light_sm'>Equivalent to <strong>0 USD</strong></p>
                 </div>
-                <button className='Update_pro'>Buy More Token</button>
+                <Link href="/user/contribute" className='Update_pro'>Buy More Token</Link>
             </div>
             <div className="balc">
                 <div className="balc_col">

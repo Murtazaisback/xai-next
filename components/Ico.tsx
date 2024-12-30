@@ -12,7 +12,7 @@ const Ico = () => {
             <p>1 XAI = 0.0195 USD</p>
             <span>1 USD = 0.000295 ETH</span>
         </div>
-        <Link href="" className='Buy_btn'>Buy Token Now</Link>
+        <Link href="/user/contribute" className='Buy_btn'>Buy Token Now</Link>
     </div>
   )
 }
