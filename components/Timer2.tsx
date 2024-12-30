@@ -46,5 +46,6 @@ export default function Timer2() {
                 <div className="label2">SECONDS</div>
             </div>
         </div>
+        //dd
     );
 }
