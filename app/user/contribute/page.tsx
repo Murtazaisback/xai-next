@@ -84,7 +84,7 @@ const Contribute = () => {
   const [isValid, setIsValid] = useState(true);
 
   // Handle input change
-  const handleAddressChange = (e: { target: { value: any; }; }) => {
+  const handleAddressChange = (e: { target: { value: string; }; }) => {
     const value = e.target.value;
     setPaymentAddress(value);
 
@@ -318,7 +318,7 @@ const Contribute = () => {
               </div>
             </div>
           </div>
-          <p className='address_infos'>To speed up verification process please enter your wallet address from where you'll transferring your amount to our address.</p>
+          <p className='address_infos'>To speed up verification process please enter your wallet address from where you,ll transferring your amount to our address.</p>
           <input type="text" placeholder='Insert your payment address' className='address_inp' value={paymentAddress}
         onChange={handleAddressChange}/>
           <div className="address_btns">
@@ -346,8 +346,8 @@ const Contribute = () => {
             <div className="confirm">
 
           <FaRegCircleCheck size="29" color='green' />
-          <h3>We're reviewing your payment.</h3>
-          <p className='confirm_p'>We'll review your transaction and get back to your within 6 hours. You'll receive an email with the details of your contribution.</p>
+          <h3>We,re reviewing your payment.</h3>
+          <p className='confirm_p'>We,ll review your transaction and get back to your within 6 hours. You,ll receive an email with the details of your contribution.</p>
           <a href="/user/transactions" className='makePay' >View transactions</a>
             </div>
           <div className="close_btn" onClick={closeThirdPopup}>
