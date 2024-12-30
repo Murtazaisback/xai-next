@@ -1,7 +1,7 @@
 'use client'
 import TokenBalance from '@/components/TokenBalance'
 import TokenSales from '@/components/TokenSales'
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FaEthereum, FaBtc, FaRegCopy, FaInfo, FaWallet,  } from "react-icons/fa";
 import { FaRegCircleCheck } from "react-icons/fa6";
 import { BsCurrencyDollar } from "react-icons/bs";
@@ -42,7 +42,6 @@ const Contribute = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isSecondPopupOpen, setIsSecondPopupOpen] = useState(false);
   const [isThirdPopupOpen, setIsThirdPopupOpen] = useState(false);  // Third popup state
-  const [isFourPopupOpen, setisFourPopupOpen] = useState(false);  // Third popup state
 
 
    // Toggle first popup
@@ -71,18 +70,8 @@ const Contribute = () => {
   const closeThirdPopup = () => {
     setIsThirdPopupOpen(false);
   };
-  // Open third popup and close second one
-  const openFourPopup = () => {
-    setIsThirdPopupOpen(false);  // Close the second popup
-    setisFourPopupOpen(true);  // Open the third popup
-  };
-
-  // Close third popup
-  const closeFourPopup = () => {
-    setisFourPopupOpen(false);
-  };
   const [selectedCurrency, setSelectedCurrency] = useState<string>("ETH");
-  const [coinRates, setCoinRates] = useState<Record<string, number>>({
+  const [coinRates] = useState<Record<string, number>>({
     ETH: 0.000006,
     BTC: 0.00000004,
     BNB: 0.000028,
@@ -110,11 +99,10 @@ const Contribute = () => {
   const [convertedAmount, setConvertedAmount] = useState<number>(0); // State to store the calculated value
   const minimumXaiAmount = 15380; // Minimum required XAI value
   const address = "0x7d4046c163f2a4B78f92baC760effA9B62E82528";
-  const amount = "0.710709 ETH";
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(address);
-    alert('Address copied to clipboard!');
+    alert('Address copied to clipboard');
   };
 
 
@@ -342,7 +330,7 @@ const Contribute = () => {
           </div>
             <p className='ligh_blue'>
               <FaInfo size="7"/>
-              <p>Do not make payment through exchange (Kraken, Bitfinex). You can use MyEtherWallet, MetaMask, Mist wallets etc.</p>
+              <p>Do not make payment through exchange Kraken, Bitfinex. You can use MyEtherWallet, MetaMask, Mist wallets etc.</p>
             </p>
             <p className='ligh_red'>
               <FaInfo size="7"/>
@@ -362,7 +350,7 @@ const Contribute = () => {
           <p className='confirm_p'>We'll review your transaction and get back to your within 6 hours. You'll receive an email with the details of your contribution.</p>
           <a href="/user/transactions" className='makePay' >View transactions</a>
             </div>
-          <div className="close_btn" onClick={togglePopup}>
+          <div className="close_btn" onClick={closeThirdPopup}>
               <FaX />
             </div>
           </div>

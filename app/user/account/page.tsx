@@ -1,17 +1,11 @@
 'use client'
 import AccountStatus from '@/components/AccountStatus'
 import React, { useState } from 'react'
-import { useUser } from "@clerk/clerk-react";
 import { getNames } from 'country-list';
 
 
 
 const Account = () => {
-    const { user } = useUser();
-
-    if (!user) {
-        return <div>Loading...</div>;
-    }
     const [selectedCountry, setSelectedCountry] = useState('');
     const countries = getNames();
 
