@@ -37,7 +37,7 @@ const Home = () => {
                         <p className="token_stat">Live</p>
                     </div>
                     <Timer/>
-                    <a href="./sawp.html" className="main_BTN">BUY xAI NOW <i className="fa-solid fa-arrow-right"></i></a>
+                    <a href="/user/contribute" className="main_BTN">BUY xAI NOW <i className="fa-solid fa-arrow-right"></i></a>
                     <div className="payment-section">
                         <span className="title">We Accept :</span> <br/>
                         <div className="payment-methods">
@@ -217,7 +217,7 @@ const Home = () => {
                     <p>Presale Participant: <b id="counter-increase">69388</b></p>
                     <div className="buy_toekn_warp">
 
-                        <a href="./sawp.html" className="main_BTN">Buy Token <i className="fa-solid fa-arrow-right"></i></a>
+                        <a href="/user/contribute" className="main_BTN">Buy Token <i className="fa-solid fa-arrow-right"></i></a>
                     </div>
                     <div className="buy_toke">
                         <div className="payment-section">

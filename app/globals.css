@@ -1459,9 +1459,10 @@ nav{
     align-items: flex-end;
     flex-direction: column;
     justify-content: end;
+    gap: 20px;
 }
 .auth_img img{
-    width: 150px;
+    width: 85px;
     padding-right: 140px;
 }
 .auth_img h1{
