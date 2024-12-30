@@ -12,7 +12,7 @@ export default function SignUpPage() {
         <div className="sign_inputs">
         <Clerk.Field name="username">
           <Clerk.Input className='Sign_input' placeholder='Your Name'/>
-          <Clerk.FieldError />
+          <Clerk.FieldError className='Input_Error'/>
         </Clerk.Field>
         <Clerk.Field name="emailAddress">
           <Clerk.Input className='Sign_input' placeholder='Your Email'/>

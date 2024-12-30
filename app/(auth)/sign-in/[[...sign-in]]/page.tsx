@@ -7,16 +7,17 @@ export default function SignUpPage() {
   return (
   <SignIn.Root>
     <SignIn.Step name="start">
-        <h3 className='Sign_h3'>Sign Up</h3>
+        <h3 className='Sign_h3'>Sign In</h3>
         <p className='Sign_p'>Create New Xai Presale Account</p>
+        <Clerk.GlobalError className='Input_Error'/>
         <div className="sign_inputs">
        
-        <Clerk.Field name="emailAddress">
+        <Clerk.Field name="identifier">
           <Clerk.Input className='Sign_input' placeholder='Your Email'/>
-          <Clerk.FieldError />
+          <Clerk.FieldError className='Input_Error' />
         </Clerk.Field>
         <Clerk.Field name="password">
-          <Clerk.Input className='Sign_input' placeholder='Password'/>
+          <Clerk.Input className='Sign_input' placeholder='Password' type='password' required/>
           <Clerk.FieldError className='Input_Error'/>
         </Clerk.Field>
         <div className="Checkbox_warp">

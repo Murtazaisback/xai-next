@@ -1,5 +1,7 @@
 'use client'
 import Nav from "@/components/nav";
+import Timer from "@/components/Timer";
+import Timer2 from "@/components/Timer2";
 import React from "react";
 
 const Home = () => {
@@ -34,27 +36,7 @@ const Home = () => {
                         <p className="token_text">Token Presale is Live</p>
                         <p className="token_stat">Live</p>
                     </div>
-                    <div className="timer">
-                        <div className="timer-section">
-                            <span id="days">00</span>
-                            <div className="label">DAYS</div>
-                        </div>
-                        <div className="colon">:</div>
-                        <div className="timer-section">
-                            <span id="hours">00</span>
-                            <div className="label">HOURS</div>
-                        </div>
-                        <div className="colon">:</div>
-                        <div className="timer-section">
-                            <span id="minutes">00</span>
-                            <div className="label">MINUTES</div>
-                        </div>
-                        <div className="colon">:</div>
-                        <div className="timer-section">
-                            <span id="seconds">00</span>
-                            <div className="label">SECONDS</div>
-                        </div>
-                    </div>
+                    <Timer/>
                     <a href="./sawp.html" className="main_BTN">BUY xAI NOW <i className="fa-solid fa-arrow-right"></i></a>
                     <div className="payment-section">
                         <span className="title">We Accept :</span> <br/>
@@ -200,7 +182,7 @@ const Home = () => {
                     <h2>Token Sale</h2>
                     <p>The presale ends when either the token sale goal is fully achieved or the timer expires,
                         whichever occurs first.</p>
-                    <div className="timer bg_blue">
+                    {/* <div className="timer bg_blue">
                         <div className="timer-section2">
                             <span id="days2">00</span>
                             <div className="label2">DAYS</div>
@@ -220,7 +202,8 @@ const Home = () => {
                             <span id="seconds2">00</span>
                             <div className="label2">SECONDS</div>
                         </div>
-                    </div>
+                    </div> */}
+                    <Timer2/>
                     <div className="progress_bars">
                         <div className="progress_top">
                             <b>Sale Raised</b>
