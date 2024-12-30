@@ -25,10 +25,12 @@ const Home = () => {
                 <div className="pre-sale_block_warp">
                     <div className="main_heading">
                         <div className="main_heading_t">
-                            <p className="">
+                            <p className="Heading_heros">
                             <p className="blue main_heading_h">xAI </p>
-                            pre-sale with up to </p>
+                            pre-sale with up to 
+                            
                             <p className="main_heading_h blue"> 200%</p>
+                            </p>
                         </div>
                         <p> bonus</p>
                     </div>

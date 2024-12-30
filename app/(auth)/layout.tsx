@@ -8,7 +8,10 @@ const LayoutHome : React.FC<LayoutProps> = ({ children }) => {
         <>
             <div className='autn_layout'>
                 <div className="auth_img">
-                <img src="./image-removebg-preview (14).png" alt="" className="nav_img"/>
+                    <div className="auth_img_box">
+
+                <img src="./face-ai.png" alt="" className="nav_img"/>
+                    </div>
                 <h1 style={{color:"white"}}>XAI</h1>
                 </div>
                 <div className="auth_content">
