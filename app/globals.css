@@ -1478,7 +1478,7 @@ nav{
     width: 90%;
     height: 100%;
     opacity: 0.28;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
 
 }
 .auth_img h1{
