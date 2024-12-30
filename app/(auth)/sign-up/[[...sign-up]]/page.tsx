@@ -5,7 +5,7 @@ import * as SignUp from '@clerk/elements/sign-up'
 
 export default function SignUpPage() {
   return (
-  <SignUp.Root>
+  <SignUp.Root >
     <SignUp.Step name="start">
         <h3 className='Sign_h3'>Sign Up</h3>
         <p className='Sign_p'>Create New Xai Presale Account</p>
@@ -32,7 +32,7 @@ export default function SignUpPage() {
         
         <p className='already_p'>
         Already have an account ?{''}
-        <Clerk.Link navigate='sign-in' className='bold_a'>
+        <Clerk.Link navigate='sign-in' className='bold_a' >
         Sign in instead
         </Clerk.Link>
         </p>
@@ -71,7 +71,7 @@ export default function SignUpPage() {
             <Clerk.FieldError className='Input_Error'/>
           </Clerk.Field>
 
-          <SignUp.Action submit className='Action_btn'>Verify</SignUp.Action>
+          <SignUp.Action submit className='Action_btn' >Verify</SignUp.Action>
         </SignUp.Strategy>
       </SignUp.Step>
   </SignUp.Root>

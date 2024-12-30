@@ -1468,16 +1468,18 @@ nav{
     height: 100vh;
 }
 .auth_img_box{
-    width: 40vw;
+    width: 50vw;
     height: 99vh;
     object-fit: cover;
     padding-right: 140px;
     
 }
 .auth_img_box img{
-    width: 100%;
+    width: 90%;
     height: 100%;
     opacity: 0.28;
+    transform: scaleX(-1);
+
 }
 .auth_img h1{
     /* padding-right: 100px; */

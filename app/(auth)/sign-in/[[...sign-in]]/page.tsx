@@ -3,8 +3,12 @@
 import * as Clerk from '@clerk/elements/common'
 import * as SignIn from '@clerk/elements/sign-in'
 import Link from 'next/link'
+import React from 'react';
+
 
 export default function SignUpPage() {
+  
+
   return (
     <SignIn.Root>
       <SignIn.Step name="start">
