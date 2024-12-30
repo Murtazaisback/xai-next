@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import Particles from "react-tsparticles";
-import { Engine, Container, ISourceOptions } from "tsparticles-engine";
+import { Engine, ISourceOptions } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
 type ParticlesComponentProps = {
